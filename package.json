@@ -1,0 +1,18 @@
+{
+  "name": "wordcount-walkthrough",
+  "main": "./lib/wordcount-walkthrough",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "wordcount-walkthrough:toggle"
+  },
+  "repository": "https://github.com/atom/wordcount-walkthrough",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}
