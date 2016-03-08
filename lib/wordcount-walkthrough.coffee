@@ -25,9 +25,13 @@ module.exports = WordcountWalkthrough =
     wordcountWalkthroughViewState: @wordcountWalkthroughView.serialize()
 
   toggle: ->
-    console.log 'WordcountWalkthrough was toggled!'
+    console.log 'WordcountWalkthrough was toggled dudette!'
 
     if @modalPanel.isVisible()
       @modalPanel.hide()
     else
+      editor = atom.workspace.getActiveTextEditor()
+      words = editor.getText().split(/\s+/).length
+      console.log(words, 'words')
+      @wordcountWalkthroughView.setCount(words)
       @modalPanel.show()
