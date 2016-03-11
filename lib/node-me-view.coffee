@@ -21,6 +21,6 @@ class NodeMeView
   getElement: ->
     @nodePanel
 
-  setCount: (count) ->
-    displayText = "There are #{count} words."
+  setCode: (code) ->
+    displayText = "#{code}"
     @nodePanel.children[0].textContent = displayText

@@ -31,7 +31,7 @@ module.exports = NodeMe =
       @modalPanel.hide()
     else
       editor = atom.workspace.getActiveTextEditor()
-      words = editor.getText()
-      console.log(words, 'words')
-      @nodeMeView.setCount(words)
+      code = editor.getText()
+      console.log(code, 'words')
+      @nodeMeView.setCode(code)
       @modalPanel.show()
