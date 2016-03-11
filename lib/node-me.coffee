@@ -8,7 +8,7 @@ module.exports = NodeMe =
 
   activate: (state) ->
     @nodeMeView = new nodeMeView(state.nodeMeViewState)
-    @modalPanel = atom.workspace.addModalPanel(item: @nodeMeView.getElement(), visible: false)
+    @modalPanel = atom.workspace.addBottomPanel(item: @nodeMeView.getElement(), visible: false)
 
     # Events subscribed to in atom's system can be easily cleaned up with a CompositeDisposable
     @subscriptions = new CompositeDisposable
