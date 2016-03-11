@@ -1,12 +1,12 @@
 {
-  "name": "wordcount-walkthrough",
+  "name": "node-me",
   "main": "./lib/wordcount-walkthrough",
   "version": "0.0.0",
   "description": "A short description of your package",
   "keywords": [
   ],
   "activationCommands": {
-    "atom-workspace": "wordcount-walkthrough:toggle"
+    "atom-workspace": "node-me:toggle"
   },
   "repository": "https://github.com/atom/wordcount-walkthrough",
   "license": "MIT",

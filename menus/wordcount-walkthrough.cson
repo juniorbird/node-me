@@ -2,19 +2,19 @@
 'context-menu':
   'atom-text-editor': [
     {
-      'label': 'Toggle wordcount-walkthrough'
-      'command': 'wordcount-walkthrough:toggle'
+      'label': 'Load document in Node.js'
+      'command': 'node-me:toggle'
     }
   ]
 'menu': [
   {
     'label': 'Packages'
     'submenu': [
-      'label': 'wordcount-walkthrough'
+      'label': 'node-me'
       'submenu': [
         {
-          'label': 'Toggle'
-          'command': 'wordcount-walkthrough:toggle'
+          'label': 'Load Document in Node.js'
+          'command': 'node-me:toggle'
         }
       ]
     ]

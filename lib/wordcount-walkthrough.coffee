@@ -14,7 +14,7 @@ module.exports = WordcountWalkthrough =
     @subscriptions = new CompositeDisposable
 
     # Register command that toggles this view
-    @subscriptions.add atom.commands.add 'atom-workspace', 'wordcount-walkthrough:toggle': => @toggle()
+    @subscriptions.add atom.commands.add 'atom-workspace', 'node-me:toggle': => @toggle()
 
   deactivate: ->
     @modalPanel.destroy()
@@ -25,7 +25,7 @@ module.exports = WordcountWalkthrough =
     wordcountWalkthroughViewState: @wordcountWalkthroughView.serialize()
 
   toggle: ->
-    console.log 'WordcountWalkthrough was toggled dudette!'
+    console.log 'Node-me was toggled developers!'
 
     if @modalPanel.isVisible()
       @modalPanel.hide()

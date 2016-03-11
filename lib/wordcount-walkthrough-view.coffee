@@ -7,7 +7,7 @@ class WordcountWalkthroughView
 
     # Create nodeInstance nodePanel
     nodeInstance = document.createElement('div')
-    nodeInstance.textContent = "There are 94 words"
+    nodeInstance.textContent = "Loading Node.js"
     nodeInstance.classList.add('nodejs')
     @nodePanel.appendChild(nodeInstance)
 
