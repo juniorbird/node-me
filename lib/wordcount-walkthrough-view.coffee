@@ -2,25 +2,25 @@ module.exports =
 class WordcountWalkthroughView
   constructor: (serializedState) ->
     # Create root element
-    @element = document.createElement('div')
-    @element.classList.add('wordcount-walkthrough')
+    @nodePanel = document.createElement('div')
+    @nodePanel.classList.add('nodePanel')
 
-    # Create message element
-    message = document.createElement('div')
-    message.textContent = "The WordcountWalkthrough package is Alive! It's ALIVE!"
-    message.classList.add('message')
-    @element.appendChild(message)
+    # Create nodeInstance nodePanel
+    nodeInstance = document.createElement('div')
+    nodeInstance.textContent = "There are 94 words"
+    nodeInstance.classList.add('nodejs')
+    @nodePanel.appendChild(nodeInstance)
 
   # Returns an object that can be retrieved when package is activated
   serialize: ->
 
   # Tear down any state and detach
   destroy: ->
-    @element.remove()
+    @nodePanel.remove()
 
   getElement: ->
-    @element
+    @nodePanel
 
   setCount: (count) ->
     displayText = "There are #{count} words."
-    @element.children[0].textContent = displayText
+    @nodePanel.children[0].textContent = displayText
