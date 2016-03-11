@@ -1,6 +1,6 @@
 {
   "name": "node-me",
-  "main": "./lib/wordcount-walkthrough",
+  "main": "./lib/node-me",
   "version": "0.0.0",
   "description": "A short description of your package",
   "keywords": [
